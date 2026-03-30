@@ -12,11 +12,11 @@ repos:
       - id: mypy
         additional_dependencies: [types-PyYAML, types-tabulate]
         args: [--config-file=mypy.ini]
-        files: ^(semantic_ci|data_generator)/
+        files: ^(semantic_ci|data_generator|fx_ingestion|ds_models|dashboard)/
 
   - repo: https://github.com/PyCQA/bandit
     rev: 1.7.10
     hooks:
       - id: bandit
         args: [-c, .bandit, -r]
-        files: ^(semantic_ci|data_generator)/
+        files: ^(semantic_ci|data_generator|fx_ingestion|ds_models|dashboard)/

@@ -48,6 +48,27 @@ seeds:
         base_price_eur: double
         created_at: timestamp
 
+  - name: fx_rates_daily
+    description: Daily FX rates from frankfurter.app (EUR base). Forward-filled for weekends/holidays.
+    config:
+      column_types:
+        rate_date: date
+        base_currency: varchar
+        target_currency: varchar
+        rate: double
+        rate_inverse: double
+
+  - name: consent_forecast_predictions
+    description: Predictions from consent impact forecasting model (scenario analysis).
+    config:
+      column_types:
+        scenario_name: varchar
+        period: varchar
+        metric_name: varchar
+        predicted_value: double
+        baseline_value: double
+        measurement_gap_pct: double
+
   - name: raw_events
     description: Funnel events with consent tracking
     config:

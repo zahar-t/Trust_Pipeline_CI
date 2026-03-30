@@ -12,6 +12,10 @@ customers as (
     select * from {{ ref('stg_customers') }}
 ),
 
+fx_rates as (
+    select * from {{ ref('stg_fx_rates') }}
+),
+
 order_items_agg as (
     select
         order_id,
@@ -30,7 +34,8 @@ enriched as (
         o.status,
         o.currency,
         o.total_amount,
-        o.total_amount_eur,
+        round(o.total_amount * coalesce(fx.rate_inverse, 1.0), 2) as total_amount_eur,
+        o.total_amount_eur as total_amount_eur_static,
         o.consent_level_at_order,
         o.country_code,
 
@@ -57,6 +62,7 @@ enriched as (
     from orders o
     left join customers c on o.customer_id = c.customer_id
     left join order_items_agg oi on o.order_id = oi.order_id
+    left join fx_rates fx on o.order_date::date = fx.rate_date and o.currency = fx.target_currency
 )
 
 select

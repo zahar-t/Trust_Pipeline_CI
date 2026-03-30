@@ -5,6 +5,8 @@ on:
     paths:
       - 'dbt_project/**'
       - 'semantic_ci/**'
+      - 'fx_ingestion/**'
+      - 'ds_models/**'
   push:
     branches: [main]
 
@@ -12,7 +14,7 @@ jobs:
   dbt-test:
     name: dbt Build + Test
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
 
@@ -24,13 +26,19 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install dbt-duckdb
+          pip install dbt-duckdb requests pandas
           pip install -e semantic_ci/
 
       - name: Generate synthetic data
         run: |
           pip install -r data_generator/requirements.txt
           python data_generator/generate.py --target duckdb --output dbt_project/seeds/
+
+      - name: Fetch FX rates
+        continue-on-error: true
+        run: |
+          pip install -r fx_ingestion/requirements.txt
+          python fx_ingestion/fetch_rates.py
 
       - name: dbt build
         working-directory: dbt_project
@@ -39,8 +47,23 @@ jobs:
           dbt run
           dbt test
 
+      - name: Run consent impact forecast
+        run: |
+          pip install -r ds_models/requirements.txt
+          python -m ds_models.consent_forecast \
+            --db dbt_project/target/dev.duckdb \
+            --output dbt_project/seeds/consent_forecast_predictions.csv
+
+      - name: Rebuild dbt with forecast seed
+        working-directory: dbt_project
+        run: |
+          dbt seed
+          dbt run
+
       # --- Semantic CI ---
-      
+      # The semantic gate now covers FX-derived metrics in addition to
+      # the original revenue and consent metrics.
+
       - name: Snapshot baseline (main branch only)
         if: github.ref == 'refs/heads/main'
         run: |
@@ -82,7 +105,7 @@ jobs:
   semantic-ci-tests:
     name: Semantic CI Unit Tests
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
 

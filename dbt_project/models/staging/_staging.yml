@@ -55,6 +55,25 @@ models:
           - unique
           - not_null
 
+  - name: stg_fx_rates
+    description: >
+      FX rates staged from the fx_rates_daily seed. Filters invalid rates
+      and adds EUR-to-EUR identity rows so EUR-denominated orders can join
+      without special-casing.
+    columns:
+      - name: rate_date
+        data_tests:
+          - not_null
+      - name: base_currency
+        data_tests:
+          - not_null
+      - name: target_currency
+        data_tests:
+          - not_null
+      - name: rate
+        data_tests:
+          - not_null
+
   - name: stg_events
     description: >
       Funnel events with consent-aware tracking classification. Each event

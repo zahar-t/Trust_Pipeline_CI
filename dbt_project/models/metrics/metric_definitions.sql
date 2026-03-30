@@ -84,6 +84,21 @@ country_mix as (
         count(distinct order_id) as total_orders
     from orders
     group by 1, 2
+),
+
+-- =========================================================================
+-- FX RATE METRICS (monthly first-of-month snapshot)
+-- =========================================================================
+fx_rates_monthly as (
+    select
+        rate_date as period,
+        target_currency,
+        rate,
+        rate_inverse
+    from {{ ref('stg_fx_rates') }}
+    where base_currency = 'EUR'
+      and target_currency in ('GBP', 'SEK', 'PLN')
+      and extract(day from rate_date) = 1
 )
 
 -- =========================================================================
@@ -159,3 +174,40 @@ select
     'country_code' as dimension_name,
     country_code as dimension_value
 from country_mix
+
+union all
+
+-- FX rate metrics
+select
+    period,
+    'fx_rate_eur_gbp',
+    cast(rate as double),
+    'monthly',
+    cast(null as varchar) as dimension_name,
+    cast(null as varchar) as dimension_value
+from fx_rates_monthly
+where target_currency = 'GBP'
+
+union all
+
+select
+    period,
+    'fx_rate_eur_sek',
+    cast(rate as double),
+    'monthly',
+    cast(null as varchar) as dimension_name,
+    cast(null as varchar) as dimension_value
+from fx_rates_monthly
+where target_currency = 'SEK'
+
+union all
+
+select
+    period,
+    'fx_rate_eur_pln',
+    cast(rate as double),
+    'monthly',
+    cast(null as varchar) as dimension_name,
+    cast(null as varchar) as dimension_value
+from fx_rates_monthly
+where target_currency = 'PLN'
