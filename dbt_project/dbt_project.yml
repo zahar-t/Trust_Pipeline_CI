@@ -1,0 +1,40 @@
+name: 'metric_trust_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'metric_trust_pipeline'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  # Consent filtering: set to 'full', 'analytics_only', 'minimal', or 'all'
+  consent_filter: 'all'
+  # Currency for reporting
+  reporting_currency: 'EUR'
+
+seeds:
+  metric_trust_pipeline: {}
+
+models:
+  metric_trust_pipeline:
+    staging:
+      +materialized: view
+      +tags: ['staging']
+    intermediate:
+      +materialized: view
+      +tags: ['intermediate']
+    marts:
+      +materialized: table
+      +tags: ['marts']
+    metrics:
+      +materialized: table
+      +tags: ['metrics']

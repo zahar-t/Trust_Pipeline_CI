@@ -1,0 +1,128 @@
+version: 2
+
+sources:
+  - name: raw_ecommerce
+    description: >
+      Raw e-commerce data loaded from synthetic data generator.
+      Contains EU customer, order, and event data with GDPR consent flags.
+    schema: "main"
+    # Freshness checks — enable when using a real warehouse with incremental loads
+    # loaded_at_field: _loaded_at
+    # freshness:
+    #   warn_after: { count: 24, period: hour }
+    #   error_after: { count: 48, period: hour }
+
+    tables:
+      - name: raw_customers
+        description: Customer records with consent levels and EU country codes
+        columns:
+          - name: customer_id
+            description: Unique customer identifier (format CUST-NNNNNN)
+            data_tests:
+              - unique
+              - not_null
+          - name: email
+            description: Customer email (nullable — ~3% null as data quality issue)
+          - name: country_code
+            description: ISO 2-letter country code (EU countries)
+            data_tests:
+              - not_null
+              - accepted_values:
+                  values: ['PT', 'DE', 'FR', 'NL', 'GB', 'SE', 'PL']
+          - name: currency
+            description: Customer's default currency
+            data_tests:
+              - accepted_values:
+                  values: ['EUR', 'GBP', 'SEK', 'PLN']
+          - name: consent_level
+            description: >
+              GDPR consent tier at registration.
+              full = all tracking, analytics_only = no marketing tracking,
+              minimal = essential only
+            data_tests:
+              - not_null
+              - accepted_values:
+                  values: ['full', 'analytics_only', 'minimal']
+          - name: created_at
+            description: Account creation timestamp (ISO 8601)
+            data_tests:
+              - not_null
+          - name: is_active
+            description: Whether the customer account is active
+
+      - name: raw_orders
+        description: Order transactions with consent state at time of order
+        columns:
+          - name: order_id
+            description: Unique order identifier (format ORD-XXXXXXXXXX)
+            data_tests:
+              - not_null
+              # Note: NOT unique — intentional duplicates exist as data quality issue
+          - name: customer_id
+            data_tests:
+              - not_null
+              - relationships:
+                  to: source('raw_ecommerce', 'raw_customers')
+                  field: customer_id
+          - name: order_date
+            data_tests:
+              - not_null
+          - name: status
+            data_tests:
+              - accepted_values:
+                  values: ['completed', 'refunded', 'cancelled']
+          - name: total_amount
+            description: Order total in customer's local currency
+          - name: total_amount_eur
+            description: Order total converted to EUR
+          - name: consent_level_at_order
+            description: Customer's consent level at time of this order
+            data_tests:
+              - accepted_values:
+                  values: ['full', 'analytics_only', 'minimal']
+
+      - name: raw_order_items
+        description: Line items for each order
+        columns:
+          - name: order_item_id
+            data_tests:
+              - unique:
+                  config:
+                    severity: warn
+              - not_null
+          - name: order_id
+            data_tests:
+              - not_null
+          - name: product_id
+            data_tests:
+              - not_null
+          - name: quantity
+            data_tests:
+              - not_null
+
+      - name: raw_products
+        description: Product catalog
+        columns:
+          - name: product_id
+            data_tests:
+              - unique
+              - not_null
+          - name: category
+            data_tests:
+              - not_null
+
+      - name: raw_events
+        description: Funnel events with consent-based tracking suppression
+        columns:
+          - name: event_id
+            data_tests:
+              - unique
+              - not_null
+          - name: event_type
+            data_tests:
+              - accepted_values:
+                  values: ['page_view', 'add_to_cart', 'checkout_start', 'purchase', 'refund']
+          - name: consent_level
+            data_tests:
+              - accepted_values:
+                  values: ['full', 'analytics_only', 'minimal']

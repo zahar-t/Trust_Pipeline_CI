@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: >
+      Core order fact table. All revenue metrics should derive from this table.
+      Consent-filterable via the `consent_filter` project variable.
+      Excludes orders with known data quality issues (negative amounts, future dates).
+    columns:
+      - name: order_id
+        description: Unique order identifier
+        data_tests:
+          - unique
+          - not_null
+      - name: net_revenue_eur
+        description: >
+          Net revenue in EUR. Positive for completed orders, negative for refunds,
+          zero for cancelled orders.
+      - name: order_month
+        data_tests:
+          - not_null
+
+  - name: dim_customers
+    description: >
+      Customer dimension with lifetime metrics and behavioral segmentation.
+      Includes tracking visibility classification based on consent level.
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_segment
+        data_tests:
+          - accepted_values:
+              values: ['never_purchased', 'one_time', 'repeat', 'loyal']
+      - name: tracking_visibility
+        data_tests:
+          - accepted_values:
+              values: ['limited_visibility', 'partial_visibility', 'full_visibility']
+
+  - name: fct_consent_impact
+    description: >
+      Quantifies the measurement gap caused by different GDPR consent regimes.
+      Shows how revenue, funnel conversion, and customer counts differ across
+      full/analytics_only/minimal consent tiers. This is the EU differentiator table.

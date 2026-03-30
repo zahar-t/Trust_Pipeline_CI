@@ -1,0 +1,32 @@
+# dbt
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+
+# Semantic CI
+.semantic_ci/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Data
+data_generator/output/
+*.duckdb
+*.duckdb.wal
+
+# dbt user config
+dbt_project/.user.yml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

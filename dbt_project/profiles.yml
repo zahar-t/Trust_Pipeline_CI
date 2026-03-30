@@ -1,0 +1,18 @@
+metric_trust_pipeline:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: "target/dev.duckdb"
+      threads: 4
+
+    bq:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GCP_PROJECT', 'your-gcp-project') }}"
+      dataset: ecommerce
+      threads: 4
+      timeout_seconds: 300
+      location: europe-west1
+      priority: interactive

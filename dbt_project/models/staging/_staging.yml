@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: >
+      Cleaned customer records. Standardizes country codes, handles null emails,
+      derives marketability flag based on email + consent.
+    columns:
+      - name: customer_id
+        data_tests:
+          - unique
+          - not_null
+      - name: consent_level
+        data_tests:
+          - accepted_values:
+              values: ['full', 'analytics_only', 'minimal']
+      - name: country_code
+        data_tests:
+          - not_null
+
+  - name: stg_orders
+    description: >
+      Deduplicated and cleaned orders. Flags data quality issues
+      (negative amounts, future dates) without filtering them — downstream
+      models decide how to handle flagged rows.
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: status
+        data_tests:
+          - accepted_values:
+              values: ['completed', 'refunded', 'cancelled']
+
+  - name: stg_order_items
+    description: Cleaned order line items with computed line totals in local and EUR currency.
+    columns:
+      - name: order_item_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    description: Product catalog with standardized category names.
+    columns:
+      - name: product_id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_events
+    description: >
+      Funnel events with consent-aware tracking classification. Each event
+      is tagged with its funnel stage and whether it's fully observable
+      given the customer's consent level.
+    columns:
+      - name: event_id
+        data_tests:
+          - unique
+          - not_null
+      - name: event_type
+        data_tests:
+          - accepted_values:
+              values: ['page_view', 'add_to_cart', 'checkout_start', 'purchase', 'refund']

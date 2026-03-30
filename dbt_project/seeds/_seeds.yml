@@ -1,0 +1,60 @@
+version: 2
+
+seeds:
+  - name: raw_customers
+    description: Raw customer data from synthetic generator
+    config:
+      column_types:
+        customer_id: varchar
+        email: varchar
+        country_code: varchar
+        currency: varchar
+        consent_level: varchar
+        created_at: timestamp
+        is_active: boolean
+
+  - name: raw_orders
+    description: Raw order transactions
+    config:
+      column_types:
+        order_id: varchar
+        customer_id: varchar
+        order_date: timestamp
+        status: varchar
+        currency: varchar
+        total_amount: double
+        total_amount_eur: double
+        consent_level_at_order: varchar
+        country_code: varchar
+
+  - name: raw_order_items
+    description: Raw order line items
+    config:
+      column_types:
+        order_item_id: varchar
+        order_id: varchar
+        product_id: varchar
+        quantity: integer
+        unit_price: double
+        unit_price_eur: double
+
+  - name: raw_products
+    description: Product catalog
+    config:
+      column_types:
+        product_id: varchar
+        name: varchar
+        category: varchar
+        base_price_eur: double
+        created_at: timestamp
+
+  - name: raw_events
+    description: Funnel events with consent tracking
+    config:
+      column_types:
+        event_id: varchar
+        customer_id: varchar
+        event_type: varchar
+        event_timestamp: timestamp
+        session_id: varchar
+        consent_level: varchar

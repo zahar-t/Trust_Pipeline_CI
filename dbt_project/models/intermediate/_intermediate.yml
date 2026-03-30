@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: int_orders_enriched
+    description: >
+      Orders joined with customer context and aggregated line items.
+      Data quality flagged rows (negative amounts, future dates) are excluded here.
+      This is the canonical order fact before mart-level aggregation.
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        data_tests:
+          - not_null
+
+  - name: int_sessions_funnel
+    description: >
+      Session-level funnel progression. Each session shows which funnel steps
+      were reached and the deepest step achieved. Consent level is preserved
+      to enable consent-aware funnel analysis.
+    columns:
+      - name: session_id
+        data_tests:
+          - unique
+          - not_null

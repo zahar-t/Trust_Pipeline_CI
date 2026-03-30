@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: metric_definitions
+    description: >
+      Centralized metric store in unpivoted format. Each row represents one
+      metric value at one time period, optionally sliced by a dimension.
+      This is the table that Semantic CI snapshots and monitors for drift.
+    columns:
+      - name: metric_name
+        data_tests:
+          - not_null
+      - name: metric_value
+        data_tests:
+          - not_null
+      - name: period
+        data_tests:
+          - not_null

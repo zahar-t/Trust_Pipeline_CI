@@ -1,0 +1,98 @@
+name: Metric Trust CI
+
+on:
+  pull_request:
+    paths:
+      - 'dbt_project/**'
+      - 'semantic_ci/**'
+  push:
+    branches: [main]
+
+jobs:
+  dbt-test:
+    name: dbt Build + Test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install dbt-duckdb
+          pip install -e semantic_ci/
+
+      - name: Generate synthetic data
+        run: |
+          pip install -r data_generator/requirements.txt
+          python data_generator/generate.py --target duckdb --output dbt_project/seeds/
+
+      - name: dbt build
+        working-directory: dbt_project
+        run: |
+          dbt seed
+          dbt run
+          dbt test
+
+      # --- Semantic CI ---
+      
+      - name: Snapshot baseline (main branch only)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          semantic-ci snapshot \
+            --project-dir dbt_project \
+            --label baseline \
+            --store .semantic_ci/snapshots.duckdb
+
+      - name: Run Semantic CI gate (PRs only)
+        if: github.event_name == 'pull_request'
+        id: semantic_ci
+        continue-on-error: true
+        run: |
+          semantic-ci gate \
+            --project-dir dbt_project \
+            --baseline-label baseline \
+            --current-label "pr-${{ github.event.pull_request.number }}" \
+            --threshold 0.05 \
+            --output-dir .semantic_ci/reports \
+            --store .semantic_ci/snapshots.duckdb
+
+      - name: Post PR comment
+        if: github.event_name == 'pull_request' && always()
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: .semantic_ci/reports/pr_comment.md
+
+      - name: Upload Semantic CI reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semantic-ci-reports
+          path: .semantic_ci/reports/
+
+      - name: Fail on critical drift
+        if: steps.semantic_ci.outcome == 'failure'
+        run: exit 1
+
+  semantic-ci-tests:
+    name: Semantic CI Unit Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install and test
+        working-directory: semantic_ci
+        run: |
+          pip install -e ".[dev]"
+          pytest tests/ -v --tb=short

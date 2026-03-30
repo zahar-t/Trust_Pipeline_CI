@@ -1,0 +1,9 @@
+# Small dataset config for quick local testing
+# Generates ~2K orders instead of ~33K
+# Usage: python generate.py --config config_small.yaml --output output/
+
+start_date: "2025-01-01"
+end_date: "2025-12-31"
+n_customers: 1500
+n_products: 50
+avg_orders_per_customer: 2.0
