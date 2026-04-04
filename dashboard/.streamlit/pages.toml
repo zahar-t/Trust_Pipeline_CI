@@ -1,0 +1,29 @@
+[[pages]]
+path = "app.py"
+name = "Home"
+icon = ":material/home:"
+
+[[pages]]
+path = "pages/1_Revenue_Overview.py"
+name = "Revenue Overview"
+icon = ":material/query_stats:"
+
+[[pages]]
+path = "pages/2_Consent_Impact.py"
+name = "Consent Impact"
+icon = ":material/gavel:"
+
+[[pages]]
+path = "pages/3_Metric_Health.py"
+name = "Metric Health"
+icon = ":material/monitoring:"
+
+[[pages]]
+path = "pages/4_FX_Impact.py"
+name = "FX Impact"
+icon = ":material/currency_exchange:"
+
+[[pages]]
+path = "pages/5_Consent_Forecast.py"
+name = "Consent Forecast"
+icon = ":material/timeline:"
