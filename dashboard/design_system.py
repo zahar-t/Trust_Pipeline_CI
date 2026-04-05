@@ -39,7 +39,29 @@ def apply_global_styles() -> None:
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         .stApp { background:#f9f9ff !important; }
-        .stApp * { font-family:'Inter', -apple-system, sans-serif !important; }
+        .stApp *:not(.material-symbols-rounded):not(.material-symbols-outlined):not(.material-icons) {
+            font-family:'Inter', -apple-system, sans-serif !important;
+        }
+        .material-symbols-rounded,
+        .material-symbols-outlined,
+        .material-icons {
+            font-family: "Material Symbols Rounded", "Material Symbols Outlined", "Material Icons" !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            letter-spacing: normal !important;
+            text-transform: none !important;
+            white-space: nowrap !important;
+            direction: ltr !important;
+        }
+        [data-testid="stSidebarCollapseButton"] * {
+            text-transform: none !important;
+        }
+        [data-testid="stSidebarCollapseButton"] {
+            display: none !important;
+        }
+        html, body, [data-testid="stAppViewContainer"], .stApp {
+            overflow-x: hidden !important;
+        }
 
         [data-testid="stSidebar"] { background: linear-gradient(165deg, #0f172a 0%, #23304a 100%) !important; }
         [data-testid="stSidebar"] * { color:#94a3b8 !important; }
@@ -71,6 +93,34 @@ def apply_global_styles() -> None:
             border-radius:12px;
             padding:10px;
             box-shadow:0 1px 4px rgba(13,27,52,0.04);
+            overflow:hidden !important;
+            max-width:100% !important;
+        }
+        [data-testid="stPlotlyChart"] > div,
+        [data-testid="stPlotlyChart"] .js-plotly-plot,
+        [data-testid="stPlotlyChart"] .plot-container,
+        [data-testid="stPlotlyChart"] .svg-container {
+            width:100% !important;
+            max-width:100% !important;
+        }
+        [data-testid="stPlotlyChart"] .modebar {
+            right:8px !important;
+            top:8px !important;
+        }
+        [data-testid="stPlotlyChart"] .plotly .main-svg,
+        [data-testid="stPlotlyChart"] .plotly .svg-container {
+            overflow: hidden !important;
+        }
+        [data-testid="stFileUploader"] button {
+            display:inline-flex !important;
+            align-items:center !important;
+            gap:8px !important;
+            line-height:1 !important;
+            font-size:14px !important;
+        }
+        [data-testid="stFileUploader"] button [class*="material"],
+        [data-testid="stFileUploader"] button [data-testid="stIconMaterial"] {
+            display:none !important;
         }
         [data-testid="stDataFrame"] {
             border-radius:12px;
@@ -106,6 +156,21 @@ def apply_global_styles() -> None:
             border-radius:0 0 12px 12px;
             padding:20px 18px;
             box-shadow:0 1px 4px rgba(13,27,52,0.04);
+            overflow:visible;
+        }
+        [data-testid="stPageLink"] a {
+            background:#ffffff !important;
+            border:1px solid rgba(197,197,211,0.18) !important;
+            border-radius:12px !important;
+            min-height:108px !important;
+            padding:16px 16px !important;
+            align-items:flex-start !important;
+            box-shadow:0 1px 3px rgba(13,27,52,0.04);
+            font-weight:700 !important;
+        }
+        [data-testid="stPageLink"] a:hover {
+            border-color:#93c5fd !important;
+            background:#f8fbff !important;
         }
 
         section.main > div { padding-top:0.25rem; }
@@ -247,6 +312,7 @@ def pipeline_health(tables: list[tuple[str, bool]]) -> None:
     """Render pipeline availability indicators."""
     items_html = ""
     for name, available in tables:
+        name_safe = escape(name)
         bg = "#ECFDF5" if available else "#FEF2F2"
         color = "#10b981" if available else COLORS["error"]
         icon = "&#x2713;" if available else "&#x2717;"
@@ -263,8 +329,8 @@ def pipeline_health(tables: list[tuple[str, bool]]) -> None:
             ">{icon}</div>
             <span style="
                 font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;
-                color:{COLORS['on_surface_variant']};text-align:center;max-width:78px;word-break:break-all;
-            ">{name}</span>
+                color:{COLORS['on_surface_variant']};text-align:center;max-width:86px;word-break:break-word;
+            ">{name_safe}</span>
         </div>
         """
 

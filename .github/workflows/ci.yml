@@ -40,12 +40,21 @@ jobs:
           pip install -r fx_ingestion/requirements.txt
           python fx_ingestion/fetch_rates.py
 
-      - name: dbt build
+      - name: Install dbt packages
         working-directory: dbt_project
-        run: |
-          dbt seed
-          dbt run
-          dbt test
+        run: dbt deps
+
+      - name: dbt seed
+        working-directory: dbt_project
+        run: dbt seed
+
+      - name: dbt run
+        working-directory: dbt_project
+        run: dbt run
+
+      - name: dbt test
+        working-directory: dbt_project
+        run: dbt test
 
       - name: Run consent impact forecast
         run: |
@@ -97,6 +106,7 @@ jobs:
         with:
           name: semantic-ci-reports
           path: .semantic_ci/reports/
+          if-no-files-found: ignore
 
       - name: Fail on critical drift
         if: steps.semantic_ci.outcome == 'failure'

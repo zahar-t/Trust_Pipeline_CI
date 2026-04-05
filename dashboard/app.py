@@ -18,7 +18,6 @@ from design_system import (
     editorial_table,
     hero_banner,
     metric_card,
-    nav_card,
     pipeline_health,
     section_header,
     sidebar_brand,
@@ -51,19 +50,20 @@ spacer(30)
 section_header("Quick Navigation", accent_color=ACCENTS["home"]["accent"])
 
 nav_cols = st.columns(5)
-for col, (icon, title, desc) in zip(
+for col, (icon, title, desc, page) in zip(
     nav_cols,
     [
-        ("🏠", "Home", "Central pipeline control."),
-        ("💰", "Revenue", "Financial performance."),
-        ("🛡️", "Consent", "Compliance and tracking."),
-        ("💱", "FX Impact", "Volatility analysis."),
-        ("🔮", "Forecast", "Revenue projections."),
+        ("🏠", "Home", "Central pipeline control.", "app.py"),
+        ("💰", "Revenue", "Financial performance.", "pages/1_Revenue_Overview.py"),
+        ("🛡️", "Consent", "Compliance and tracking.", "pages/2_Consent_Impact.py"),
+        ("💱", "FX Impact", "Volatility analysis.", "pages/4_FX_Impact.py"),
+        ("🔮", "Forecast", "Revenue projections.", "pages/5_Consent_Forecast.py"),
     ],
     strict=True,
 ):
     with col:
-        nav_card(icon, title, desc)
+        st.page_link(page, label=title, icon=icon, use_container_width=True)
+        st.caption(desc)
 
 spacer(30)
 section_header("Key Statistics", accent_color=ACCENTS["home"]["accent"])
