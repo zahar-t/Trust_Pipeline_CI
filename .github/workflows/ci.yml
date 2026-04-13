@@ -1,6 +1,8 @@
 name: Metric Trust CI
 
 on:
+  schedule:
+    - cron: '0 6 * * *'  # daily at 06:00 UTC
   pull_request:
     paths:
       - 'dbt_project/**'
@@ -111,6 +113,15 @@ jobs:
       - name: Fail on critical drift
         if: steps.semantic_ci.outcome == 'failure'
         run: exit 1
+
+      - name: Commit updated seed data
+        if: github.event_name == 'schedule'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dbt_project/seeds/
+          git diff --cached --quiet || git commit -m "chore: daily data refresh [$(date -u +%Y-%m-%d)]"
+          git push
 
   semantic-ci-tests:
     name: Semantic CI Unit Tests

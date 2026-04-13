@@ -131,9 +131,9 @@ def load_existing_csv(path: Path) -> list[dict[str, object]] | None:
 )
 @click.option(
     "--end-date",
-    default="2025-12-31",
+    default=lambda: date.today().isoformat(),
     show_default=True,
-    help="End date (YYYY-MM-DD).",
+    help="End date (YYYY-MM-DD). Defaults to today.",
 )
 @click.option(
     "--output",

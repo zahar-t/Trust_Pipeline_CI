@@ -17,7 +17,7 @@ import csv
 import random
 import uuid
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -29,7 +29,7 @@ import yaml
 
 DEFAULT_CONFIG: dict[str, Any] = {
     "start_date": "2025-01-01",
-    "end_date": "2025-12-31",
+    "end_date": date.today().isoformat(),
     "n_customers": 12_000,
     "n_products": 250,
     "avg_orders_per_customer": 3.2,
