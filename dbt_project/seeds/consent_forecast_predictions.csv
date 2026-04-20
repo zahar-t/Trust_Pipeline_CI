@@ -1,301 +1,301 @@
 scenario_name,period,metric_name,predicted_value,baseline_value,measurement_gap_pct
-current_state,all_months,n_orders,32237.1467,27062.2399,-19.12
-current_state,all_months,gross_revenue_eur,16438821.4181,13760820.4293,-19.46
-current_state,all_months,net_revenue_eur,14917617.7525,12557175.2853,-18.8
-current_state,all_months,unique_customers,25375.147,21317.4893,-19.03
-current_state,all_months,total_sessions,27336.0,27336.0,0.0
-current_state,all_months,sessions_with_pageview,23233.4084,27336.0,15.01
-current_state,all_months,sessions_with_cart,14925.0368,17644.8921,15.41
-current_state,all_months,sessions_with_checkout,9460.295,7989.5835,-18.41
-current_state,all_months,sessions_with_purchase,2759.7782,2305.9025,-19.68
-current_state,all_months,session_conversion_rate,0.0998,0.0843,-18.39
-current_state,all_months,cart_to_purchase_rate,0.1818,0.1285,-41.47
-current_state,all_months,avg_order_value_eur,505.4703,509.1047,0.71
-current_state,2025-01-01 00:00:00,gross_revenue_eur,32533.1532,,
-current_state,2025-01-01 00:00:00,session_conversion_rate,0.0882,,
-current_state,2025-01-01 00:00:00,n_orders,60.6268,,
-current_state,2025-02-01 00:00:00,gross_revenue_eur,70134.2019,,
-current_state,2025-02-01 00:00:00,session_conversion_rate,0.0936,,
-current_state,2025-02-01 00:00:00,n_orders,154.2401,,
-current_state,2025-03-01 00:00:00,gross_revenue_eur,182532.4846,,
-current_state,2025-03-01 00:00:00,session_conversion_rate,0.123,,
-current_state,2025-03-01 00:00:00,n_orders,373.661,,
-current_state,2025-04-01 00:00:00,gross_revenue_eur,234376.785,,
-current_state,2025-04-01 00:00:00,session_conversion_rate,0.0906,,
-current_state,2025-04-01 00:00:00,n_orders,521.8736,,
-current_state,2025-05-01 00:00:00,gross_revenue_eur,410747.5105,,
-current_state,2025-05-01 00:00:00,session_conversion_rate,0.0928,,
-current_state,2025-05-01 00:00:00,n_orders,781.7996,,
-current_state,2025-06-01 00:00:00,gross_revenue_eur,459310.5531,,
-current_state,2025-06-01 00:00:00,session_conversion_rate,0.0972,,
-current_state,2025-06-01 00:00:00,n_orders,909.5311,,
-current_state,2025-07-01 00:00:00,gross_revenue_eur,623210.4221,,
-current_state,2025-07-01 00:00:00,session_conversion_rate,0.095,,
-current_state,2025-07-01 00:00:00,n_orders,1204.1857,,
-current_state,2025-08-01 00:00:00,gross_revenue_eur,789937.6387,,
-current_state,2025-08-01 00:00:00,session_conversion_rate,0.1007,,
-current_state,2025-08-01 00:00:00,n_orders,1504.9137,,
-current_state,2025-09-01 00:00:00,gross_revenue_eur,916841.5635,,
-current_state,2025-09-01 00:00:00,session_conversion_rate,0.1044,,
-current_state,2025-09-01 00:00:00,n_orders,1786.6112,,
-current_state,2025-10-01 00:00:00,gross_revenue_eur,1070149.8942,,
-current_state,2025-10-01 00:00:00,session_conversion_rate,0.0988,,
-current_state,2025-10-01 00:00:00,n_orders,2100.2413,,
-current_state,2025-11-01 00:00:00,gross_revenue_eur,1286139.6552,,
-current_state,2025-11-01 00:00:00,session_conversion_rate,0.1115,,
-current_state,2025-11-01 00:00:00,n_orders,2486.0286,,
-current_state,2025-12-01 00:00:00,gross_revenue_eur,1580939.6894,,
-current_state,2025-12-01 00:00:00,session_conversion_rate,0.0995,,
-current_state,2025-12-01 00:00:00,n_orders,3117.681,,
-current_state,2026-01-01 00:00:00,gross_revenue_eur,1367039.9446,,
-current_state,2026-01-01 00:00:00,session_conversion_rate,0.1054,,
-current_state,2026-01-01 00:00:00,n_orders,2642.4789,,
-current_state,2026-02-01 00:00:00,gross_revenue_eur,1444799.7084,,
-current_state,2026-02-01 00:00:00,session_conversion_rate,0.0945,,
-current_state,2026-02-01 00:00:00,n_orders,2880.1956,,
-current_state,2026-03-01 00:00:00,gross_revenue_eur,3055172.982,,
-current_state,2026-03-01 00:00:00,session_conversion_rate,0.0984,,
-current_state,2026-03-01 00:00:00,n_orders,6042.5262,,
-current_state,2026-04-01 00:00:00,gross_revenue_eur,2914955.2317,,
-current_state,2026-04-01 00:00:00,session_conversion_rate,0.1037,,
-current_state,2026-04-01 00:00:00,n_orders,5670.5523,,
-privacy_first_eu,all_months,n_orders,35687.3908,27062.2399,-31.87
-privacy_first_eu,all_months,gross_revenue_eur,18207670.7135,13760820.4293,-32.32
-privacy_first_eu,all_months,net_revenue_eur,16475334.3905,12557175.2853,-31.2
-privacy_first_eu,all_months,unique_customers,28096.7102,21317.4893,-31.8
-privacy_first_eu,all_months,total_sessions,27336.0,27336.0,0.0
-privacy_first_eu,all_months,sessions_with_pageview,20498.3474,27336.0,25.01
-privacy_first_eu,all_months,sessions_with_cart,13092.0183,17644.8921,25.8
-privacy_first_eu,all_months,sessions_with_checkout,10425.9003,7989.5835,-30.49
-privacy_first_eu,all_months,sessions_with_purchase,3049.7761,2305.9025,-32.26
-privacy_first_eu,all_months,session_conversion_rate,0.1101,0.0843,-30.57
-privacy_first_eu,all_months,cart_to_purchase_rate,0.2305,0.1285,-79.31
-privacy_first_eu,all_months,avg_order_value_eur,506.3785,509.1047,0.54
-privacy_first_eu,2025-01-01 00:00:00,gross_revenue_eur,34841.5435,,
-privacy_first_eu,2025-01-01 00:00:00,session_conversion_rate,0.0843,,
-privacy_first_eu,2025-01-01 00:00:00,n_orders,65.5617,,
-privacy_first_eu,2025-02-01 00:00:00,gross_revenue_eur,77104.3788,,
-privacy_first_eu,2025-02-01 00:00:00,session_conversion_rate,0.1147,,
-privacy_first_eu,2025-02-01 00:00:00,n_orders,161.1968,,
-privacy_first_eu,2025-03-01 00:00:00,gross_revenue_eur,205178.6769,,
-privacy_first_eu,2025-03-01 00:00:00,session_conversion_rate,0.1485,,
-privacy_first_eu,2025-03-01 00:00:00,n_orders,419.1074,,
-privacy_first_eu,2025-04-01 00:00:00,gross_revenue_eur,257284.3492,,
-privacy_first_eu,2025-04-01 00:00:00,session_conversion_rate,0.1085,,
-privacy_first_eu,2025-04-01 00:00:00,n_orders,590.0213,,
-privacy_first_eu,2025-05-01 00:00:00,gross_revenue_eur,452037.8875,,
-privacy_first_eu,2025-05-01 00:00:00,session_conversion_rate,0.0955,,
-privacy_first_eu,2025-05-01 00:00:00,n_orders,870.2066,,
-privacy_first_eu,2025-06-01 00:00:00,gross_revenue_eur,496335.1449,,
-privacy_first_eu,2025-06-01 00:00:00,session_conversion_rate,0.0999,,
-privacy_first_eu,2025-06-01 00:00:00,n_orders,986.1463,,
-privacy_first_eu,2025-07-01 00:00:00,gross_revenue_eur,678795.4473,,
-privacy_first_eu,2025-07-01 00:00:00,session_conversion_rate,0.098,,
-privacy_first_eu,2025-07-01 00:00:00,n_orders,1280.4755,,
-privacy_first_eu,2025-08-01 00:00:00,gross_revenue_eur,884855.8675,,
-privacy_first_eu,2025-08-01 00:00:00,session_conversion_rate,0.1134,,
-privacy_first_eu,2025-08-01 00:00:00,n_orders,1689.0515,,
-privacy_first_eu,2025-09-01 00:00:00,gross_revenue_eur,1013925.6942,,
-privacy_first_eu,2025-09-01 00:00:00,session_conversion_rate,0.1123,,
-privacy_first_eu,2025-09-01 00:00:00,n_orders,1981.1498,,
-privacy_first_eu,2025-10-01 00:00:00,gross_revenue_eur,1205135.0708,,
-privacy_first_eu,2025-10-01 00:00:00,session_conversion_rate,0.1107,,
-privacy_first_eu,2025-10-01 00:00:00,n_orders,2347.0428,,
-privacy_first_eu,2025-11-01 00:00:00,gross_revenue_eur,1424557.0957,,
-privacy_first_eu,2025-11-01 00:00:00,session_conversion_rate,0.1231,,
-privacy_first_eu,2025-11-01 00:00:00,n_orders,2726.9255,,
-privacy_first_eu,2025-12-01 00:00:00,gross_revenue_eur,1756954.2172,,
-privacy_first_eu,2025-12-01 00:00:00,session_conversion_rate,0.1093,,
-privacy_first_eu,2025-12-01 00:00:00,n_orders,3444.1121,,
-privacy_first_eu,2026-01-01 00:00:00,gross_revenue_eur,1495745.0575,,
-privacy_first_eu,2026-01-01 00:00:00,session_conversion_rate,0.1139,,
-privacy_first_eu,2026-01-01 00:00:00,n_orders,2905.613,,
-privacy_first_eu,2026-02-01 00:00:00,gross_revenue_eur,1601880.3596,,
-privacy_first_eu,2026-02-01 00:00:00,session_conversion_rate,0.1019,,
-privacy_first_eu,2026-02-01 00:00:00,n_orders,3210.9412,,
-privacy_first_eu,2026-03-01 00:00:00,gross_revenue_eur,3363709.6,,
-privacy_first_eu,2026-03-01 00:00:00,session_conversion_rate,0.1105,,
-privacy_first_eu,2026-03-01 00:00:00,n_orders,6680.8259,,
-privacy_first_eu,2026-04-01 00:00:00,gross_revenue_eur,3259330.3228,,
-privacy_first_eu,2026-04-01 00:00:00,session_conversion_rate,0.1172,,
-privacy_first_eu,2026-04-01 00:00:00,n_orders,6329.0134,,
-post_cookie_apocalypse,all_months,n_orders,38275.1128,27062.2399,-41.43
-post_cookie_apocalypse,all_months,gross_revenue_eur,19532215.3965,13760820.4293,-41.94
-post_cookie_apocalypse,all_months,net_revenue_eur,17641602.3104,12557175.2853,-40.49
-post_cookie_apocalypse,all_months,unique_customers,30139.9716,21317.4893,-41.39
-post_cookie_apocalypse,all_months,total_sessions,27336.0,27336.0,-0.0
-post_cookie_apocalypse,all_months,sessions_with_pageview,18447.0516,27336.0,32.52
-post_cookie_apocalypse,all_months,sessions_with_cart,11714.7436,17644.8921,33.61
-post_cookie_apocalypse,all_months,sessions_with_checkout,11148.217,7989.5835,-39.53
-post_cookie_apocalypse,all_months,sessions_with_purchase,3265.677,2305.9025,-41.62
-post_cookie_apocalypse,all_months,session_conversion_rate,0.1177,0.0843,-39.61
-post_cookie_apocalypse,all_months,cart_to_purchase_rate,0.2779,0.1285,-116.23
-post_cookie_apocalypse,all_months,avg_order_value_eur,507.3206,509.1047,0.35
-post_cookie_apocalypse,2025-01-01 00:00:00,gross_revenue_eur,36497.3115,,
-post_cookie_apocalypse,2025-01-01 00:00:00,session_conversion_rate,0.0839,,
-post_cookie_apocalypse,2025-01-01 00:00:00,n_orders,68.5012,,
-post_cookie_apocalypse,2025-02-01 00:00:00,gross_revenue_eur,82826.2907,,
-post_cookie_apocalypse,2025-02-01 00:00:00,session_conversion_rate,0.1287,,
-post_cookie_apocalypse,2025-02-01 00:00:00,n_orders,167.4319,,
-post_cookie_apocalypse,2025-03-01 00:00:00,gross_revenue_eur,222811.1873,,
-post_cookie_apocalypse,2025-03-01 00:00:00,session_conversion_rate,0.1678,,
-post_cookie_apocalypse,2025-03-01 00:00:00,n_orders,454.4274,,
-post_cookie_apocalypse,2025-04-01 00:00:00,gross_revenue_eur,274358.4679,,
-post_cookie_apocalypse,2025-04-01 00:00:00,session_conversion_rate,0.1195,,
-post_cookie_apocalypse,2025-04-01 00:00:00,n_orders,641.795,,
-post_cookie_apocalypse,2025-05-01 00:00:00,gross_revenue_eur,483136.1428,,
-post_cookie_apocalypse,2025-05-01 00:00:00,session_conversion_rate,0.0981,,
-post_cookie_apocalypse,2025-05-01 00:00:00,n_orders,936.4621,,
-post_cookie_apocalypse,2025-06-01 00:00:00,gross_revenue_eur,524487.1603,,
-post_cookie_apocalypse,2025-06-01 00:00:00,session_conversion_rate,0.1019,,
-post_cookie_apocalypse,2025-06-01 00:00:00,n_orders,1046.0427,,
-post_cookie_apocalypse,2025-07-01 00:00:00,gross_revenue_eur,723338.5917,,
-post_cookie_apocalypse,2025-07-01 00:00:00,session_conversion_rate,0.101,,
-post_cookie_apocalypse,2025-07-01 00:00:00,n_orders,1339.9223,,
-post_cookie_apocalypse,2025-08-01 00:00:00,gross_revenue_eur,955397.8074,,
-post_cookie_apocalypse,2025-08-01 00:00:00,session_conversion_rate,0.123,,
-post_cookie_apocalypse,2025-08-01 00:00:00,n_orders,1826.8921,,
-post_cookie_apocalypse,2025-09-01 00:00:00,gross_revenue_eur,1086080.9354,,
-post_cookie_apocalypse,2025-09-01 00:00:00,session_conversion_rate,0.118,,
-post_cookie_apocalypse,2025-09-01 00:00:00,n_orders,2126.5487,,
-post_cookie_apocalypse,2025-10-01 00:00:00,gross_revenue_eur,1303287.7511,,
-post_cookie_apocalypse,2025-10-01 00:00:00,session_conversion_rate,0.1186,,
-post_cookie_apocalypse,2025-10-01 00:00:00,n_orders,2529.3747,,
-post_cookie_apocalypse,2025-11-01 00:00:00,gross_revenue_eur,1529213.7784,,
-post_cookie_apocalypse,2025-11-01 00:00:00,session_conversion_rate,0.1321,,
-post_cookie_apocalypse,2025-11-01 00:00:00,n_orders,2908.6772,,
-post_cookie_apocalypse,2025-12-01 00:00:00,gross_revenue_eur,1888015.9104,,
-post_cookie_apocalypse,2025-12-01 00:00:00,session_conversion_rate,0.1167,,
-post_cookie_apocalypse,2025-12-01 00:00:00,n_orders,3689.119,,
-post_cookie_apocalypse,2026-01-01 00:00:00,gross_revenue_eur,1593313.1496,,
-post_cookie_apocalypse,2026-01-01 00:00:00,session_conversion_rate,0.1203,,
-post_cookie_apocalypse,2026-01-01 00:00:00,n_orders,3103.9617,,
-post_cookie_apocalypse,2026-02-01 00:00:00,gross_revenue_eur,1720508.797,,
-post_cookie_apocalypse,2026-02-01 00:00:00,session_conversion_rate,0.1074,,
-post_cookie_apocalypse,2026-02-01 00:00:00,n_orders,3459.6914,,
-post_cookie_apocalypse,2026-03-01 00:00:00,gross_revenue_eur,3592721.9736,,
-post_cookie_apocalypse,2026-03-01 00:00:00,session_conversion_rate,0.1199,,
-post_cookie_apocalypse,2026-03-01 00:00:00,n_orders,7154.6074,,
-post_cookie_apocalypse,2026-04-01 00:00:00,gross_revenue_eur,3516220.1414,,
-post_cookie_apocalypse,2026-04-01 00:00:00,session_conversion_rate,0.1267,,
-post_cookie_apocalypse,2026-04-01 00:00:00,n_orders,6821.6579,,
-best_case_ux,all_months,n_orders,29649.5378,27062.2399,-9.56
-best_case_ux,all_months,gross_revenue_eur,15108190.0776,13760820.4293,-9.79
-best_case_ux,all_months,net_revenue_eur,13745474.7531,12557175.2853,-9.46
-best_case_ux,all_months,unique_customers,23337.9625,21317.4893,-9.48
-best_case_ux,all_months,total_sessions,27336.0,27336.0,0.0
-best_case_ux,all_months,sessions_with_pageview,25284.7042,27336.0,7.5
-best_case_ux,all_months,sessions_with_cart,16295.0074,17644.8921,7.65
-best_case_ux,all_months,sessions_with_checkout,8732.4882,7989.5835,-9.3
-best_case_ux,all_months,sessions_with_purchase,2539.2302,2305.9025,-10.12
-best_case_ux,all_months,session_conversion_rate,0.0921,0.0843,-9.17
-best_case_ux,all_months,cart_to_purchase_rate,0.1529,0.1285,-18.96
-best_case_ux,all_months,avg_order_value_eur,505.4426,509.1047,0.72
-best_case_ux,2025-01-01 00:00:00,gross_revenue_eur,30657.6767,,
-best_case_ux,2025-01-01 00:00:00,session_conversion_rate,0.0963,,
-best_case_ux,2025-01-01 00:00:00,n_orders,55.4715,,
-best_case_ux,2025-02-01 00:00:00,gross_revenue_eur,65850.1932,,
-best_case_ux,2025-02-01 00:00:00,session_conversion_rate,0.0743,,
-best_case_ux,2025-02-01 00:00:00,n_orders,150.9656,,
-best_case_ux,2025-03-01 00:00:00,gross_revenue_eur,166784.6758,,
-best_case_ux,2025-03-01 00:00:00,session_conversion_rate,0.1048,,
-best_case_ux,2025-03-01 00:00:00,n_orders,341.9342,,
-best_case_ux,2025-04-01 00:00:00,gross_revenue_eur,216992.6896,,
-best_case_ux,2025-04-01 00:00:00,session_conversion_rate,0.0731,,
-best_case_ux,2025-04-01 00:00:00,n_orders,472.0284,,
-best_case_ux,2025-05-01 00:00:00,gross_revenue_eur,380028.8119,,
-best_case_ux,2025-05-01 00:00:00,session_conversion_rate,0.0919,,
-best_case_ux,2025-05-01 00:00:00,n_orders,715.3993,,
-best_case_ux,2025-06-01 00:00:00,gross_revenue_eur,432274.382,,
-best_case_ux,2025-06-01 00:00:00,session_conversion_rate,0.095,,
-best_case_ux,2025-06-01 00:00:00,n_orders,856.7184,,
-best_case_ux,2025-07-01 00:00:00,gross_revenue_eur,586970.9152,,
-best_case_ux,2025-07-01 00:00:00,session_conversion_rate,0.0938,,
-best_case_ux,2025-07-01 00:00:00,n_orders,1151.2245,,
-best_case_ux,2025-08-01 00:00:00,gross_revenue_eur,717514.2974,,
-best_case_ux,2025-08-01 00:00:00,session_conversion_rate,0.0916,,
-best_case_ux,2025-08-01 00:00:00,n_orders,1366.309,,
-best_case_ux,2025-09-01 00:00:00,gross_revenue_eur,842772.5571,,
-best_case_ux,2025-09-01 00:00:00,session_conversion_rate,0.0983,,
-best_case_ux,2025-09-01 00:00:00,n_orders,1639.7429,,
-best_case_ux,2025-10-01 00:00:00,gross_revenue_eur,963019.1711,,
-best_case_ux,2025-10-01 00:00:00,session_conversion_rate,0.0881,,
-best_case_ux,2025-10-01 00:00:00,n_orders,1909.8537,,
-best_case_ux,2025-11-01 00:00:00,gross_revenue_eur,1183937.0886,,
-best_case_ux,2025-11-01 00:00:00,session_conversion_rate,0.103,,
-best_case_ux,2025-11-01 00:00:00,n_orders,2307.4157,,
-best_case_ux,2025-12-01 00:00:00,gross_revenue_eur,1447116.6797,,
-best_case_ux,2025-12-01 00:00:00,session_conversion_rate,0.0922,,
-best_case_ux,2025-12-01 00:00:00,n_orders,2873.208,,
-best_case_ux,2026-01-01 00:00:00,gross_revenue_eur,1272495.1471,,
-best_case_ux,2026-01-01 00:00:00,session_conversion_rate,0.0991,,
-best_case_ux,2026-01-01 00:00:00,n_orders,2447.0338,,
-best_case_ux,2026-02-01 00:00:00,gross_revenue_eur,1328550.7587,,
-best_case_ux,2026-02-01 00:00:00,session_conversion_rate,0.0889,,
-best_case_ux,2026-02-01 00:00:00,n_orders,2633.4553,,
-best_case_ux,2026-03-01 00:00:00,gross_revenue_eur,2819207.6197,,
-best_case_ux,2026-03-01 00:00:00,session_conversion_rate,0.0898,,
-best_case_ux,2026-03-01 00:00:00,n_orders,5554.3644,,
-best_case_ux,2026-04-01 00:00:00,gross_revenue_eur,2654017.4139,,
-best_case_ux,2026-04-01 00:00:00,session_conversion_rate,0.0926,,
-best_case_ux,2026-04-01 00:00:00,n_orders,5174.413,,
-german_strict,all_months,n_orders,35687.3201,27062.2399,-31.87
-german_strict,all_months,gross_revenue_eur,18211474.8744,13760820.4293,-32.34
-german_strict,all_months,net_revenue_eur,16479006.3151,12557175.2853,-31.23
-german_strict,all_months,unique_customers,28092.9122,21317.4893,-31.78
-german_strict,all_months,total_sessions,27336.0,27336.0,0.0
-german_strict,all_months,sessions_with_pageview,20498.3474,27336.0,25.01
-german_strict,all_months,sessions_with_cart,13096.5833,17644.8921,25.78
-german_strict,all_months,sessions_with_checkout,10429.3316,7989.5835,-30.54
-german_strict,all_months,sessions_with_purchase,3052.6805,2305.9025,-32.39
-german_strict,all_months,session_conversion_rate,0.1103,0.0843,-30.79
-german_strict,all_months,cart_to_purchase_rate,0.2311,0.1285,-79.78
-german_strict,all_months,avg_order_value_eur,505.9422,509.1047,0.62
-german_strict,2025-01-01 00:00:00,gross_revenue_eur,34978.8614,,
-german_strict,2025-01-01 00:00:00,session_conversion_rate,0.0799,,
-german_strict,2025-01-01 00:00:00,n_orders,66.9466,,
-german_strict,2025-02-01 00:00:00,gross_revenue_eur,76205.6893,,
-german_strict,2025-02-01 00:00:00,session_conversion_rate,0.1197,,
-german_strict,2025-02-01 00:00:00,n_orders,159.3464,,
-german_strict,2025-03-01 00:00:00,gross_revenue_eur,204000.7384,,
-german_strict,2025-03-01 00:00:00,session_conversion_rate,0.1478,,
-german_strict,2025-03-01 00:00:00,n_orders,416.8617,,
-german_strict,2025-04-01 00:00:00,gross_revenue_eur,257478.0847,,
-german_strict,2025-04-01 00:00:00,session_conversion_rate,0.1122,,
-german_strict,2025-04-01 00:00:00,n_orders,588.8159,,
-german_strict,2025-05-01 00:00:00,gross_revenue_eur,451800.6645,,
-german_strict,2025-05-01 00:00:00,session_conversion_rate,0.0945,,
-german_strict,2025-05-01 00:00:00,n_orders,870.2971,,
-german_strict,2025-06-01 00:00:00,gross_revenue_eur,495637.7423,,
-german_strict,2025-06-01 00:00:00,session_conversion_rate,0.1002,,
-german_strict,2025-06-01 00:00:00,n_orders,981.7189,,
-german_strict,2025-07-01 00:00:00,gross_revenue_eur,673605.6739,,
-german_strict,2025-07-01 00:00:00,session_conversion_rate,0.097,,
-german_strict,2025-07-01 00:00:00,n_orders,1276.422,,
-german_strict,2025-08-01 00:00:00,gross_revenue_eur,886031.7434,,
-german_strict,2025-08-01 00:00:00,session_conversion_rate,0.1131,,
-german_strict,2025-08-01 00:00:00,n_orders,1689.529,,
-german_strict,2025-09-01 00:00:00,gross_revenue_eur,1015121.7973,,
-german_strict,2025-09-01 00:00:00,session_conversion_rate,0.1125,,
-german_strict,2025-09-01 00:00:00,n_orders,1982.0682,,
-german_strict,2025-10-01 00:00:00,gross_revenue_eur,1210746.3476,,
-german_strict,2025-10-01 00:00:00,session_conversion_rate,0.112,,
-german_strict,2025-10-01 00:00:00,n_orders,2352.0776,,
-german_strict,2025-11-01 00:00:00,gross_revenue_eur,1423023.273,,
-german_strict,2025-11-01 00:00:00,session_conversion_rate,0.1231,,
-german_strict,2025-11-01 00:00:00,n_orders,2724.9638,,
-german_strict,2025-12-01 00:00:00,gross_revenue_eur,1758680.04,,
-german_strict,2025-12-01 00:00:00,session_conversion_rate,0.1094,,
-german_strict,2025-12-01 00:00:00,n_orders,3443.7785,,
-german_strict,2026-01-01 00:00:00,gross_revenue_eur,1493855.4984,,
-german_strict,2026-01-01 00:00:00,session_conversion_rate,0.1137,,
-german_strict,2026-01-01 00:00:00,n_orders,2903.7982,,
-german_strict,2026-02-01 00:00:00,gross_revenue_eur,1600393.1798,,
-german_strict,2026-02-01 00:00:00,session_conversion_rate,0.1019,,
-german_strict,2026-02-01 00:00:00,n_orders,3209.6851,,
-german_strict,2026-03-01 00:00:00,gross_revenue_eur,3368055.218,,
-german_strict,2026-03-01 00:00:00,session_conversion_rate,0.11,,
-german_strict,2026-03-01 00:00:00,n_orders,6689.8136,,
-german_strict,2026-04-01 00:00:00,gross_revenue_eur,3261860.3222,,
-german_strict,2026-04-01 00:00:00,session_conversion_rate,0.1178,,
-german_strict,2026-04-01 00:00:00,n_orders,6331.1977,,
+current_state,all_months,n_orders,32240.3003,26911.1262,-19.8
+current_state,all_months,gross_revenue_eur,16514964.0023,13730076.2779,-20.28
+current_state,all_months,net_revenue_eur,14977359.3073,12400534.857,-20.78
+current_state,all_months,unique_customers,25432.2987,21267.2533,-19.58
+current_state,all_months,total_sessions,27169.0,27169.0,0.0
+current_state,all_months,sessions_with_pageview,23103.2217,27169.0,14.96
+current_state,all_months,sessions_with_cart,14855.5972,17531.2276,15.26
+current_state,all_months,sessions_with_checkout,9424.049,7788.6284,-21.0
+current_state,all_months,sessions_with_purchase,2717.6224,2260.065,-20.25
+current_state,all_months,session_conversion_rate,0.095,0.0798,-18.99
+current_state,all_months,cart_to_purchase_rate,0.1719,0.1235,-39.21
+current_state,all_months,avg_order_value_eur,511.5923,514.3191,0.53
+current_state,2025-01-01 00:00:00,gross_revenue_eur,25235.974,,
+current_state,2025-01-01 00:00:00,session_conversion_rate,0.0619,,
+current_state,2025-01-01 00:00:00,n_orders,48.4357,,
+current_state,2025-02-01 00:00:00,gross_revenue_eur,81170.9793,,
+current_state,2025-02-01 00:00:00,session_conversion_rate,0.0684,,
+current_state,2025-02-01 00:00:00,n_orders,151.2604,,
+current_state,2025-03-01 00:00:00,gross_revenue_eur,178414.8554,,
+current_state,2025-03-01 00:00:00,session_conversion_rate,0.0993,,
+current_state,2025-03-01 00:00:00,n_orders,351.2175,,
+current_state,2025-04-01 00:00:00,gross_revenue_eur,275150.4413,,
+current_state,2025-04-01 00:00:00,session_conversion_rate,0.0935,,
+current_state,2025-04-01 00:00:00,n_orders,531.4738,,
+current_state,2025-05-01 00:00:00,gross_revenue_eur,333008.4893,,
+current_state,2025-05-01 00:00:00,session_conversion_rate,0.1117,,
+current_state,2025-05-01 00:00:00,n_orders,702.7732,,
+current_state,2025-06-01 00:00:00,gross_revenue_eur,457854.7528,,
+current_state,2025-06-01 00:00:00,session_conversion_rate,0.0992,,
+current_state,2025-06-01 00:00:00,n_orders,901.766,,
+current_state,2025-07-01 00:00:00,gross_revenue_eur,613704.8767,,
+current_state,2025-07-01 00:00:00,session_conversion_rate,0.0963,,
+current_state,2025-07-01 00:00:00,n_orders,1246.7659,,
+current_state,2025-08-01 00:00:00,gross_revenue_eur,744351.428,,
+current_state,2025-08-01 00:00:00,session_conversion_rate,0.0916,,
+current_state,2025-08-01 00:00:00,n_orders,1426.7595,,
+current_state,2025-09-01 00:00:00,gross_revenue_eur,933585.4506,,
+current_state,2025-09-01 00:00:00,session_conversion_rate,0.0856,,
+current_state,2025-09-01 00:00:00,n_orders,1759.5393,,
+current_state,2025-10-01 00:00:00,gross_revenue_eur,1175657.434,,
+current_state,2025-10-01 00:00:00,session_conversion_rate,0.0917,,
+current_state,2025-10-01 00:00:00,n_orders,2211.9342,,
+current_state,2025-11-01 00:00:00,gross_revenue_eur,1301883.902,,
+current_state,2025-11-01 00:00:00,session_conversion_rate,0.1054,,
+current_state,2025-11-01 00:00:00,n_orders,2548.6918,,
+current_state,2025-12-01 00:00:00,gross_revenue_eur,1480974.1672,,
+current_state,2025-12-01 00:00:00,session_conversion_rate,0.1062,,
+current_state,2025-12-01 00:00:00,n_orders,3012.1909,,
+current_state,2026-01-01 00:00:00,gross_revenue_eur,1309321.8484,,
+current_state,2026-01-01 00:00:00,session_conversion_rate,0.096,,
+current_state,2026-01-01 00:00:00,n_orders,2603.3098,,
+current_state,2026-02-01 00:00:00,gross_revenue_eur,1362118.0457,,
+current_state,2026-02-01 00:00:00,session_conversion_rate,0.1101,,
+current_state,2026-02-01 00:00:00,n_orders,2718.9156,,
+current_state,2026-03-01 00:00:00,gross_revenue_eur,3187664.8998,,
+current_state,2026-03-01 00:00:00,session_conversion_rate,0.1043,,
+current_state,2026-03-01 00:00:00,n_orders,6078.1157,,
+current_state,2026-04-01 00:00:00,gross_revenue_eur,3054866.4577,,
+current_state,2026-04-01 00:00:00,session_conversion_rate,0.0982,,
+current_state,2026-04-01 00:00:00,n_orders,5947.1512,,
+privacy_first_eu,all_months,n_orders,35794.8891,26911.1262,-33.01
+privacy_first_eu,all_months,gross_revenue_eur,18373149.2323,13730076.2779,-33.82
+privacy_first_eu,all_months,net_revenue_eur,16675174.0676,12400534.857,-34.47
+privacy_first_eu,all_months,unique_customers,28213.4644,21267.2533,-32.66
+privacy_first_eu,all_months,total_sessions,27169.0,27169.0,0.0
+privacy_first_eu,all_months,sessions_with_pageview,20392.7029,27169.0,24.94
+privacy_first_eu,all_months,sessions_with_cart,13068.9129,17531.2276,25.45
+privacy_first_eu,all_months,sessions_with_checkout,10462.6842,7788.6284,-34.33
+privacy_first_eu,all_months,sessions_with_purchase,3012.2335,2260.065,-33.28
+privacy_first_eu,all_months,session_conversion_rate,0.1046,0.0798,-31.06
+privacy_first_eu,all_months,cart_to_purchase_rate,0.2146,0.1235,-73.75
+privacy_first_eu,all_months,avg_order_value_eur,508.2539,514.3191,1.18
+privacy_first_eu,2025-01-01 00:00:00,gross_revenue_eur,24734.2484,,
+privacy_first_eu,2025-01-01 00:00:00,session_conversion_rate,0.0499,,
+privacy_first_eu,2025-01-01 00:00:00,n_orders,51.6787,,
+privacy_first_eu,2025-02-01 00:00:00,gross_revenue_eur,95745.3143,,
+privacy_first_eu,2025-02-01 00:00:00,session_conversion_rate,0.0872,,
+privacy_first_eu,2025-02-01 00:00:00,n_orders,177.7857,,
+privacy_first_eu,2025-03-01 00:00:00,gross_revenue_eur,189859.3002,,
+privacy_first_eu,2025-03-01 00:00:00,session_conversion_rate,0.1061,,
+privacy_first_eu,2025-03-01 00:00:00,n_orders,384.5457,,
+privacy_first_eu,2025-04-01 00:00:00,gross_revenue_eur,292727.0273,,
+privacy_first_eu,2025-04-01 00:00:00,session_conversion_rate,0.0949,,
+privacy_first_eu,2025-04-01 00:00:00,n_orders,578.2504,,
+privacy_first_eu,2025-05-01 00:00:00,gross_revenue_eur,370548.6348,,
+privacy_first_eu,2025-05-01 00:00:00,session_conversion_rate,0.1295,,
+privacy_first_eu,2025-05-01 00:00:00,n_orders,793.2082,,
+privacy_first_eu,2025-06-01 00:00:00,gross_revenue_eur,517747.8131,,
+privacy_first_eu,2025-06-01 00:00:00,session_conversion_rate,0.1149,,
+privacy_first_eu,2025-06-01 00:00:00,n_orders,999.6198,,
+privacy_first_eu,2025-07-01 00:00:00,gross_revenue_eur,678720.6949,,
+privacy_first_eu,2025-07-01 00:00:00,session_conversion_rate,0.1083,,
+privacy_first_eu,2025-07-01 00:00:00,n_orders,1390.1566,,
+privacy_first_eu,2025-08-01 00:00:00,gross_revenue_eur,803787.7116,,
+privacy_first_eu,2025-08-01 00:00:00,session_conversion_rate,0.099,,
+privacy_first_eu,2025-08-01 00:00:00,n_orders,1548.5314,,
+privacy_first_eu,2025-09-01 00:00:00,gross_revenue_eur,1043050.0868,,
+privacy_first_eu,2025-09-01 00:00:00,session_conversion_rate,0.0944,,
+privacy_first_eu,2025-09-01 00:00:00,n_orders,1953.1119,,
+privacy_first_eu,2025-10-01 00:00:00,gross_revenue_eur,1312490.2803,,
+privacy_first_eu,2025-10-01 00:00:00,session_conversion_rate,0.1021,,
+privacy_first_eu,2025-10-01 00:00:00,n_orders,2421.4776,,
+privacy_first_eu,2025-11-01 00:00:00,gross_revenue_eur,1470577.5873,,
+privacy_first_eu,2025-11-01 00:00:00,session_conversion_rate,0.1186,,
+privacy_first_eu,2025-11-01 00:00:00,n_orders,2861.3213,,
+privacy_first_eu,2025-12-01 00:00:00,gross_revenue_eur,1640554.7507,,
+privacy_first_eu,2025-12-01 00:00:00,session_conversion_rate,0.1173,,
+privacy_first_eu,2025-12-01 00:00:00,n_orders,3341.7893,,
+privacy_first_eu,2026-01-01 00:00:00,gross_revenue_eur,1423248.4521,,
+privacy_first_eu,2026-01-01 00:00:00,session_conversion_rate,0.1052,,
+privacy_first_eu,2026-01-01 00:00:00,n_orders,2870.6049,,
+privacy_first_eu,2026-02-01 00:00:00,gross_revenue_eur,1515860.4341,,
+privacy_first_eu,2026-02-01 00:00:00,session_conversion_rate,0.1216,,
+privacy_first_eu,2026-02-01 00:00:00,n_orders,3014.1063,,
+privacy_first_eu,2026-03-01 00:00:00,gross_revenue_eur,3604647.5733,,
+privacy_first_eu,2026-03-01 00:00:00,session_conversion_rate,0.1161,,
+privacy_first_eu,2026-03-01 00:00:00,n_orders,6834.3935,,
+privacy_first_eu,2026-04-01 00:00:00,gross_revenue_eur,3388849.3234,,
+privacy_first_eu,2026-04-01 00:00:00,session_conversion_rate,0.1081,,
+privacy_first_eu,2026-04-01 00:00:00,n_orders,6574.3078,,
+post_cookie_apocalypse,all_months,n_orders,38461.0599,26911.1262,-42.92
+post_cookie_apocalypse,all_months,gross_revenue_eur,19766990.3958,13730076.2779,-43.97
+post_cookie_apocalypse,all_months,net_revenue_eur,17945988.0192,12400534.857,-44.72
+post_cookie_apocalypse,all_months,unique_customers,30299.9059,21267.2533,-42.47
+post_cookie_apocalypse,all_months,total_sessions,27169.0,27169.0,0.0
+post_cookie_apocalypse,all_months,sessions_with_pageview,18359.8138,27169.0,32.42
+post_cookie_apocalypse,all_months,sessions_with_cart,11728.5278,17531.2276,33.1
+post_cookie_apocalypse,all_months,sessions_with_checkout,11235.1057,7788.6284,-44.25
+post_cookie_apocalypse,all_months,sessions_with_purchase,3231.8684,2260.065,-43.0
+post_cookie_apocalypse,all_months,session_conversion_rate,0.1117,0.0798,-39.98
+post_cookie_apocalypse,all_months,cart_to_purchase_rate,0.2551,0.1235,-106.54
+post_cookie_apocalypse,all_months,avg_order_value_eur,505.8286,514.3191,1.65
+post_cookie_apocalypse,2025-01-01 00:00:00,gross_revenue_eur,24114.8362,,
+post_cookie_apocalypse,2025-01-01 00:00:00,session_conversion_rate,0.038,,
+post_cookie_apocalypse,2025-01-01 00:00:00,n_orders,53.9722,,
+post_cookie_apocalypse,2025-02-01 00:00:00,gross_revenue_eur,105960.5062,,
+post_cookie_apocalypse,2025-02-01 00:00:00,session_conversion_rate,0.1004,,
+post_cookie_apocalypse,2025-02-01 00:00:00,n_orders,197.1173,,
+post_cookie_apocalypse,2025-03-01 00:00:00,gross_revenue_eur,199741.6092,,
+post_cookie_apocalypse,2025-03-01 00:00:00,session_conversion_rate,0.1119,,
+post_cookie_apocalypse,2025-03-01 00:00:00,n_orders,410.8408,,
+post_cookie_apocalypse,2025-04-01 00:00:00,gross_revenue_eur,305577.7464,,
+post_cookie_apocalypse,2025-04-01 00:00:00,session_conversion_rate,0.0966,,
+post_cookie_apocalypse,2025-04-01 00:00:00,n_orders,614.3913,,
+post_cookie_apocalypse,2025-05-01 00:00:00,gross_revenue_eur,399543.9749,,
+post_cookie_apocalypse,2025-05-01 00:00:00,session_conversion_rate,0.1434,,
+post_cookie_apocalypse,2025-05-01 00:00:00,n_orders,861.3,,
+post_cookie_apocalypse,2025-06-01 00:00:00,gross_revenue_eur,562506.0599,,
+post_cookie_apocalypse,2025-06-01 00:00:00,session_conversion_rate,0.1266,,
+post_cookie_apocalypse,2025-06-01 00:00:00,n_orders,1072.6356,,
+post_cookie_apocalypse,2025-07-01 00:00:00,gross_revenue_eur,727864.3974,,
+post_cookie_apocalypse,2025-07-01 00:00:00,session_conversion_rate,0.1183,,
+post_cookie_apocalypse,2025-07-01 00:00:00,n_orders,1495.2004,,
+post_cookie_apocalypse,2025-08-01 00:00:00,gross_revenue_eur,849170.324,,
+post_cookie_apocalypse,2025-08-01 00:00:00,session_conversion_rate,0.105,,
+post_cookie_apocalypse,2025-08-01 00:00:00,n_orders,1643.3359,,
+post_cookie_apocalypse,2025-09-01 00:00:00,gross_revenue_eur,1127271.1014,,
+post_cookie_apocalypse,2025-09-01 00:00:00,session_conversion_rate,0.1011,,
+post_cookie_apocalypse,2025-09-01 00:00:00,n_orders,2098.6876,,
+post_cookie_apocalypse,2025-10-01 00:00:00,gross_revenue_eur,1416181.2382,,
+post_cookie_apocalypse,2025-10-01 00:00:00,session_conversion_rate,0.1104,,
+post_cookie_apocalypse,2025-10-01 00:00:00,n_orders,2580.9198,,
+post_cookie_apocalypse,2025-11-01 00:00:00,gross_revenue_eur,1598582.7077,,
+post_cookie_apocalypse,2025-11-01 00:00:00,session_conversion_rate,0.1276,,
+post_cookie_apocalypse,2025-11-01 00:00:00,n_orders,3094.9078,,
+post_cookie_apocalypse,2025-12-01 00:00:00,gross_revenue_eur,1760233.8611,,
+post_cookie_apocalypse,2025-12-01 00:00:00,session_conversion_rate,0.1256,,
+post_cookie_apocalypse,2025-12-01 00:00:00,n_orders,3588.4684,,
+post_cookie_apocalypse,2026-01-01 00:00:00,gross_revenue_eur,1509589.0024,,
+post_cookie_apocalypse,2026-01-01 00:00:00,session_conversion_rate,0.1121,,
+post_cookie_apocalypse,2026-01-01 00:00:00,n_orders,3069.572,,
+post_cookie_apocalypse,2026-02-01 00:00:00,gross_revenue_eur,1630200.9874,,
+post_cookie_apocalypse,2026-02-01 00:00:00,session_conversion_rate,0.1303,,
+post_cookie_apocalypse,2026-02-01 00:00:00,n_orders,3237.5107,,
+post_cookie_apocalypse,2026-03-01 00:00:00,gross_revenue_eur,3911040.8838,,
+post_cookie_apocalypse,2026-03-01 00:00:00,session_conversion_rate,0.1247,,
+post_cookie_apocalypse,2026-03-01 00:00:00,n_orders,7395.0321,,
+post_cookie_apocalypse,2026-04-01 00:00:00,gross_revenue_eur,3639411.1599,,
+post_cookie_apocalypse,2026-04-01 00:00:00,session_conversion_rate,0.1153,,
+post_cookie_apocalypse,2026-04-01 00:00:00,n_orders,7047.1681,,
+best_case_ux,all_months,n_orders,29574.7963,26911.1262,-9.9
+best_case_ux,all_months,gross_revenue_eur,15121711.1762,13730076.2779,-10.14
+best_case_ux,all_months,net_revenue_eur,13699135.5563,12400534.857,-10.47
+best_case_ux,all_months,unique_customers,23347.5072,21267.2533,-9.78
+best_case_ux,all_months,total_sessions,27169.0,27169.0,0.0
+best_case_ux,all_months,sessions_with_pageview,25136.1109,27169.0,7.48
+best_case_ux,all_months,sessions_with_cart,16194.9002,17531.2276,7.62
+best_case_ux,all_months,sessions_with_checkout,8632.5586,7788.6284,-10.84
+best_case_ux,all_months,sessions_with_purchase,2494.1375,2260.065,-10.36
+best_case_ux,all_months,session_conversion_rate,0.0876,0.0798,-9.76
+best_case_ux,all_months,cart_to_purchase_rate,0.146,0.1235,-18.22
+best_case_ux,all_months,avg_order_value_eur,513.9665,514.3191,0.07
+best_case_ux,2025-01-01 00:00:00,gross_revenue_eur,25148.1338,,
+best_case_ux,2025-01-01 00:00:00,session_conversion_rate,0.066,,
+best_case_ux,2025-01-01 00:00:00,n_orders,45.7384,,
+best_case_ux,2025-02-01 00:00:00,gross_revenue_eur,68874.1602,,
+best_case_ux,2025-02-01 00:00:00,session_conversion_rate,0.0533,,
+best_case_ux,2025-02-01 00:00:00,n_orders,130.2929,,
+best_case_ux,2025-03-01 00:00:00,gross_revenue_eur,172311.384,,
+best_case_ux,2025-03-01 00:00:00,session_conversion_rate,0.0956,,
+best_case_ux,2025-03-01 00:00:00,n_orders,328.7012,,
+best_case_ux,2025-04-01 00:00:00,gross_revenue_eur,261334.7173,,
+best_case_ux,2025-04-01 00:00:00,session_conversion_rate,0.0934,,
+best_case_ux,2025-04-01 00:00:00,n_orders,498.4118,,
+best_case_ux,2025-05-01 00:00:00,gross_revenue_eur,306457.4577,,
+best_case_ux,2025-05-01 00:00:00,session_conversion_rate,0.099,,
+best_case_ux,2025-05-01 00:00:00,n_orders,635.4536,,
+best_case_ux,2025-06-01 00:00:00,gross_revenue_eur,412626.5471,,
+best_case_ux,2025-06-01 00:00:00,session_conversion_rate,0.0872,,
+best_case_ux,2025-06-01 00:00:00,n_orders,827.6607,,
+best_case_ux,2025-07-01 00:00:00,gross_revenue_eur,565671.9782,,
+best_case_ux,2025-07-01 00:00:00,session_conversion_rate,0.0889,,
+best_case_ux,2025-07-01 00:00:00,n_orders,1134.4516,,
+best_case_ux,2025-08-01 00:00:00,gross_revenue_eur,701311.7964,,
+best_case_ux,2025-08-01 00:00:00,session_conversion_rate,0.0865,,
+best_case_ux,2025-08-01 00:00:00,n_orders,1342.0657,,
+best_case_ux,2025-09-01 00:00:00,gross_revenue_eur,855539.0904,,
+best_case_ux,2025-09-01 00:00:00,session_conversion_rate,0.0792,,
+best_case_ux,2025-09-01 00:00:00,n_orders,1615.1166,,
+best_case_ux,2025-10-01 00:00:00,gross_revenue_eur,1075068.5072,,
+best_case_ux,2025-10-01 00:00:00,session_conversion_rate,0.0847,,
+best_case_ux,2025-10-01 00:00:00,n_orders,2059.1382,,
+best_case_ux,2025-11-01 00:00:00,gross_revenue_eur,1178198.3641,,
+best_case_ux,2025-11-01 00:00:00,session_conversion_rate,0.0936,,
+best_case_ux,2025-11-01 00:00:00,n_orders,2312.5288,,
+best_case_ux,2025-12-01 00:00:00,gross_revenue_eur,1361276.6504,,
+best_case_ux,2025-12-01 00:00:00,session_conversion_rate,0.0979,,
+best_case_ux,2025-12-01 00:00:00,n_orders,2763.9995,,
+best_case_ux,2026-01-01 00:00:00,gross_revenue_eur,1225586.6729,,
+best_case_ux,2026-01-01 00:00:00,session_conversion_rate,0.089,,
+best_case_ux,2026-01-01 00:00:00,n_orders,2399.9667,,
+best_case_ux,2026-02-01 00:00:00,gross_revenue_eur,1244966.6183,,
+best_case_ux,2026-02-01 00:00:00,session_conversion_rate,0.1018,,
+best_case_ux,2026-02-01 00:00:00,n_orders,2501.3623,,
+best_case_ux,2026-03-01 00:00:00,gross_revenue_eur,2862817.205,,
+best_case_ux,2026-03-01 00:00:00,session_conversion_rate,0.0951,,
+best_case_ux,2026-03-01 00:00:00,n_orders,5498.3655,,
+best_case_ux,2026-04-01 00:00:00,gross_revenue_eur,2804521.8931,,
+best_case_ux,2026-04-01 00:00:00,session_conversion_rate,0.0903,,
+best_case_ux,2026-04-01 00:00:00,n_orders,5481.5429,,
+german_strict,all_months,n_orders,35794.4723,26911.1262,-33.01
+german_strict,all_months,gross_revenue_eur,18372781.5214,13730076.2779,-33.81
+german_strict,all_months,net_revenue_eur,16679805.1922,12400534.857,-34.51
+german_strict,all_months,unique_customers,28212.4331,21267.2533,-32.66
+german_strict,all_months,total_sessions,27169.0,27169.0,0.0
+german_strict,all_months,sessions_with_pageview,20392.7029,27169.0,24.94
+german_strict,all_months,sessions_with_cart,13069.5892,17531.2276,25.45
+german_strict,all_months,sessions_with_checkout,10474.6024,7788.6284,-34.49
+german_strict,all_months,sessions_with_purchase,3014.6398,2260.065,-33.39
+german_strict,all_months,session_conversion_rate,0.1046,0.0798,-31.13
+german_strict,all_months,cart_to_purchase_rate,0.2147,0.1235,-73.88
+german_strict,all_months,avg_order_value_eur,508.6049,514.3191,1.11
+german_strict,2025-01-01 00:00:00,gross_revenue_eur,25176.2812,,
+german_strict,2025-01-01 00:00:00,session_conversion_rate,0.0546,,
+german_strict,2025-01-01 00:00:00,n_orders,51.9311,,
+german_strict,2025-02-01 00:00:00,gross_revenue_eur,97046.3312,,
+german_strict,2025-02-01 00:00:00,session_conversion_rate,0.0861,,
+german_strict,2025-02-01 00:00:00,n_orders,178.8081,,
+german_strict,2025-03-01 00:00:00,gross_revenue_eur,187497.5267,,
+german_strict,2025-03-01 00:00:00,session_conversion_rate,0.1049,,
+german_strict,2025-03-01 00:00:00,n_orders,382.1839,,
+german_strict,2025-04-01 00:00:00,gross_revenue_eur,293330.1553,,
+german_strict,2025-04-01 00:00:00,session_conversion_rate,0.094,,
+german_strict,2025-04-01 00:00:00,n_orders,576.3261,,
+german_strict,2025-05-01 00:00:00,gross_revenue_eur,369020.9419,,
+german_strict,2025-05-01 00:00:00,session_conversion_rate,0.1293,,
+german_strict,2025-05-01 00:00:00,n_orders,792.7256,,
+german_strict,2025-06-01 00:00:00,gross_revenue_eur,518041.5374,,
+german_strict,2025-06-01 00:00:00,session_conversion_rate,0.115,,
+german_strict,2025-06-01 00:00:00,n_orders,1000.3006,,
+german_strict,2025-07-01 00:00:00,gross_revenue_eur,678026.4424,,
+german_strict,2025-07-01 00:00:00,session_conversion_rate,0.1067,,
+german_strict,2025-07-01 00:00:00,n_orders,1394.7006,,
+german_strict,2025-08-01 00:00:00,gross_revenue_eur,802323.3486,,
+german_strict,2025-08-01 00:00:00,session_conversion_rate,0.0988,,
+german_strict,2025-08-01 00:00:00,n_orders,1542.2123,,
+german_strict,2025-09-01 00:00:00,gross_revenue_eur,1039190.9277,,
+german_strict,2025-09-01 00:00:00,session_conversion_rate,0.0942,,
+german_strict,2025-09-01 00:00:00,n_orders,1952.3913,,
+german_strict,2025-10-01 00:00:00,gross_revenue_eur,1310551.5109,,
+german_strict,2025-10-01 00:00:00,session_conversion_rate,0.1016,,
+german_strict,2025-10-01 00:00:00,n_orders,2417.3237,,
+german_strict,2025-11-01 00:00:00,gross_revenue_eur,1467877.8482,,
+german_strict,2025-11-01 00:00:00,session_conversion_rate,0.1203,,
+german_strict,2025-11-01 00:00:00,n_orders,2862.9317,,
+german_strict,2025-12-01 00:00:00,gross_revenue_eur,1640566.2548,,
+german_strict,2025-12-01 00:00:00,session_conversion_rate,0.1174,,
+german_strict,2025-12-01 00:00:00,n_orders,3342.7346,,
+german_strict,2026-01-01 00:00:00,gross_revenue_eur,1421620.0928,,
+german_strict,2026-01-01 00:00:00,session_conversion_rate,0.1053,,
+german_strict,2026-01-01 00:00:00,n_orders,2873.3399,,
+german_strict,2026-02-01 00:00:00,gross_revenue_eur,1517617.2304,,
+german_strict,2026-02-01 00:00:00,session_conversion_rate,0.1213,,
+german_strict,2026-02-01 00:00:00,n_orders,3010.4495,,
+german_strict,2026-03-01 00:00:00,gross_revenue_eur,3616181.5634,,
+german_strict,2026-03-01 00:00:00,session_conversion_rate,0.1163,,
+german_strict,2026-03-01 00:00:00,n_orders,6846.3382,,
+german_strict,2026-04-01 00:00:00,gross_revenue_eur,3388713.5285,,
+german_strict,2026-04-01 00:00:00,session_conversion_rate,0.1085,,
+german_strict,2026-04-01 00:00:00,n_orders,6569.7753,,
