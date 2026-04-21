@@ -63,17 +63,17 @@ if kpi.empty:
 
 c1, c2, c3, c4 = st.columns(4)
 with c1:
-    metric_card("Net Revenue (EUR)", f"€{kpi['net_revenue'].iloc[0]:,.2f}", accent_color="#1e3a8a")
+    metric_card("Net Revenue (EUR)", f"€{kpi['net_revenue'].iloc[0]:,.2f}", accent_color="#B5722F")
 with c2:
     if not mom.empty and mom["prev_month_rev"].iloc[0] not in (None, 0):
         pct = (mom["last_month_rev"].iloc[0] / mom["prev_month_rev"].iloc[0] - 1) * 100
-        metric_card("MoM Change", f"{pct:+.1f}%", delta=f"{pct:+.1f}%", delta_positive=pct >= 0, accent_color="#3b82f6")
+        metric_card("MoM Change", f"{pct:+.1f}%", delta=f"{pct:+.1f}%", delta_positive=pct >= 0, accent_color="#D49A5C")
     else:
-        metric_card("MoM Change", "N/A", accent_color="#3b82f6")
+        metric_card("MoM Change", "N/A", accent_color="#D49A5C")
 with c3:
-    metric_card("Avg Order Value", f"€{kpi['aov'].iloc[0]:,.2f}", accent_color="#60a5fa")
+    metric_card("Avg Order Value", f"€{kpi['aov'].iloc[0]:,.2f}", accent_color="#D49A5C")
 with c4:
-    metric_card("Total Orders", f"{int(kpi['total_orders'].iloc[0]):,}", accent_color="#94a3b8")
+    metric_card("Total Orders", f"{int(kpi['total_orders'].iloc[0]):,}", accent_color="#8A7F6D")
 
 spacer(20)
 tab1, tab2, tab3 = st.tabs(["Revenue Trend", "By Country", "By Currency"])
@@ -101,7 +101,7 @@ with tab1:
                 fill="tozeroy",
                 name="Gross Revenue",
                 line=dict(color=REVENUE_SECONDARY),
-                fillcolor="rgba(149,165,166,0.08)",
+                fillcolor="rgba(212,154,92,0.08)",
             )
         )
         fig.add_trace(

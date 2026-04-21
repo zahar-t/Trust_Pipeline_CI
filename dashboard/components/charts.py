@@ -16,13 +16,13 @@ if TYPE_CHECKING:
 # ---------------------------------------------------------------------------
 
 CONSENT_COLORS: dict[str, str] = {
-    "full": "#2ecc71",
-    "analytics_only": "#f39c12",
-    "minimal": "#e74c3c",
+    "full": "#2E6B5A",          # pine / signal-ok
+    "analytics_only": "#E8B931", # signal-warn
+    "minimal": "#B2382F",        # signal-bad
 }
 
-REVENUE_PRIMARY = "#3498db"
-REVENUE_SECONDARY = "#95a5a6"
+REVENUE_PRIMARY = "#B5722F"    # copper-500
+REVENUE_SECONDARY = "#D49A5C"  # copper-300
 
 # Plotly template defaults
 _LAYOUT_DEFAULTS = dict(

@@ -91,7 +91,7 @@ with tab1:
                 rows = []
                 for _, r in merged.iterrows():
                     delta_val = r["delta"]
-                    delta_color = "#10b981" if delta_val and delta_val >= 0 else "#ba1a1a"
+                    delta_color = "#2E6B5A" if delta_val and delta_val >= 0 else "#B2382F"
                     sign = "+" if delta_val and delta_val >= 0 else ""
                     delta_str = f"{sign}{delta_val:.4f}" if delta_val is not None else "N/A"
                     rows.append(
@@ -157,19 +157,19 @@ with tab2:
             section_header("Predicted Metrics", accent_color=ACCENTS["forecast"]["accent"])
             m1, m2, m3 = st.columns(3)
             with m1:
-                metric_card("Predicted AOV", f"€{weighted_aov:,.2f}", accent_color="#ef4444", description="Weighted average order value")
+                metric_card("Predicted AOV", f"€{weighted_aov:,.2f}", accent_color="#C7433A", description="Weighted average order value")
             with m2:
                 metric_card(
                     "Predicted Conversion",
                     f"{weighted_conv * 100:.2f}%",
-                    accent_color="#dc2626",
+                    accent_color="#C7433A",
                     description="Weighted conversion rate",
                 )
             with m3:
                 metric_card(
                     "Predicted Cart-To-Purchase",
                     f"{weighted_cart * 100:.2f}%",
-                    accent_color="#b91c1c",
+                    accent_color="#C7433A",
                     description="Weighted cart completion",
                 )
 
@@ -192,7 +192,7 @@ with tab2:
                     marker_color=[CONSENT_COLORS["full"], CONSENT_COLORS["analytics_only"], CONSENT_COLORS["minimal"]],
                     text=[f"{full_pct}%", f"{analytics_pct}%", f"{minimal_pct}%"],
                     textposition="outside",
-                    textfont=dict(family="Inter", size=14, color="#0d1b34"),
+                    textfont=dict(family="Inter", size=14, color="#2A241C"),
                 )
             )
             fig.update_layout(

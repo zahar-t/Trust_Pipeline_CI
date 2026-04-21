@@ -67,14 +67,14 @@ measurement_gap = 100 - full_pct
 
 c1, c2, c3 = st.columns(3)
 with c1:
-    metric_card("Full Consent Revenue", f"{full_pct:.1f}%", accent_color="#f97316", description="Share of total gross revenue")
+    metric_card("Full Consent Revenue", f"{full_pct:.1f}%", accent_color="#7D3C7B", description="Share of total gross revenue")
 with c2:
-    metric_card("Measurement Gap", f"{measurement_gap:.1f}%", accent_color="#ea580c", description="Revenue not fully attributed")
+    metric_card("Measurement Gap", f"{measurement_gap:.1f}%", accent_color="#7D3C7B", description="Revenue not fully attributed")
 with c3:
     metric_card(
         "Funnel Visibility Loss",
         f"{100 - full_session_pct:.1f}%",
-        accent_color="#c2410c",
+        accent_color="#7D3C7B",
         description="Sessions with limited tracking",
     )
 
@@ -130,7 +130,7 @@ with tab2:
             y="rate",
             color="metric",
             title="",
-            color_map={"conversion_rate_pct": "#fb923c", "cart_to_purchase_pct": "#ea580c"},
+            color_map={"conversion_rate_pct": "#7D3C7B", "cart_to_purchase_pct": "#B3A994"},
         )
         fig.update_layout(font=dict(family="Inter"), plot_bgcolor="white")
         st.plotly_chart(fig, use_container_width=True)

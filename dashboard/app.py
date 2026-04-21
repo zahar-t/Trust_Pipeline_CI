@@ -84,16 +84,16 @@ if stats.empty:
 else:
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        metric_card("Total Orders", f"{int(stats['total_orders'].iloc[0]):,}", accent_color="#3b82f6")
+        metric_card("Total Orders", f"{int(stats['total_orders'].iloc[0]):,}", accent_color="#B5722F")
     with c2:
-        metric_card("Unique Customers", f"{int(stats['total_customers'].iloc[0]):,}", accent_color="#60a5fa")
+        metric_card("Unique Customers", f"{int(stats['total_customers'].iloc[0]):,}", accent_color="#D49A5C")
     with c3:
-        metric_card("Net Revenue (EUR)", f"€{stats['total_net_revenue'].iloc[0]:,.2f}", accent_color="#1e3a8a")
+        metric_card("Net Revenue (EUR)", f"€{stats['total_net_revenue'].iloc[0]:,.2f}", accent_color="#B5722F")
     with c4:
-        metric_card("Avg Order Value", f"€{stats['avg_order_value'].iloc[0]:,.2f}", accent_color="#94a3b8")
+        metric_card("Avg Order Value", f"€{stats['avg_order_value'].iloc[0]:,.2f}", accent_color="#8A7F6D")
 
 spacer(30)
-section_header("Data Pipeline Health", accent_color="#10b981")
+section_header("Data Pipeline Health", accent_color="#2E6B5A")
 
 expected_tables = [
     "fct_orders",
@@ -135,12 +135,12 @@ else:
         consent = str(row["consent_level_at_order"])
         rows.append(
             [
-                f'<span style="font-family:monospace;font-weight:700;color:#1e3a8a;">{row["order_id"]}</span>',
+                f'<span style="font-family:monospace;font-weight:700;color:#B5722F;">{row["order_id"]}</span>',
                 str(row["order_date"]),
                 f'<span style="background:#f1f5f9;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:700;">{row["country_code"]} / EU</span>',
                 f'<span style="font-weight:700;">€ {row["net_revenue_eur"]:,.2f}</span>',
                 status_badge(consent.replace("_", " ").title(), consent_variant.get(consent, "neutral")),
-                '<span style="color:#10b981;font-size:16px;">&#x2713;</span>',
+                '<span style="color:#2E6B5A;font-size:16px;">&#x2713;</span>',
             ]
         )
 

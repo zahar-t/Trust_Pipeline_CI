@@ -99,7 +99,7 @@ with tab1:
                 y="rate",
                 color="pair",
                 title="",
-                color_map={"USD/EUR": "#10b981", "GBP/EUR": "#3b82f6", "JPY/EUR": "#f59e0b"},
+                color_map={"USD/EUR": "#3A6EA5", "GBP/EUR": "#B5722F", "JPY/EUR": "#C7433A"},
             )
             fig.update_layout(
                 font=dict(family="Inter"),
@@ -139,7 +139,7 @@ with tab2:
                         x=comparison["month"],
                         y=comparison["static_fx_revenue"],
                         name="Static Revenue",
-                        marker_color="#e0e8ff",
+                        marker_color="#E8E2D2",
                     )
                 )
                 fig.add_trace(
@@ -147,7 +147,7 @@ with tab2:
                         x=comparison["month"],
                         y=comparison["live_fx_revenue"],
                         name="Live Revenue",
-                        marker_color="#1e3a8a",
+                        marker_color="#3A6EA5",
                     )
                 )
                 fig.update_layout(
@@ -177,16 +177,16 @@ with tab2:
                 diff = live - static
                 pct = (diff / static * 100) if static else 0
 
-                metric_card("Live FX Total", f"€{live:,.2f}", accent_color="#10b981", description="Market value (real-time)")
+                metric_card("Live FX Total", f"€{live:,.2f}", accent_color="#3A6EA5", description="Market value (real-time)")
                 spacer(12)
-                metric_card("Static FX Total", f"€{static:,.2f}", accent_color="#86efac", description="Budgetary rate (locked)")
+                metric_card("Static FX Total", f"€{static:,.2f}", accent_color="#D7E2EE", description="Budgetary rate (locked)")
                 spacer(12)
                 metric_card(
                     "FX Impact",
                     f"€{diff:+,.2f}",
                     delta=f"{pct:+.2f}%",
                     delta_positive=diff >= 0,
-                    accent_color="#065f46",
+                    accent_color="#3A6EA5",
                     description="Net gain or loss from FX movement",
                 )
 
@@ -217,7 +217,7 @@ with tab3:
             for _, r in by_currency.iterrows():
                 variant = "favorable" if r["fx_diff"] >= 0 else "adverse"
                 sign = "+" if r["fx_diff"] >= 0 else ""
-                diff_color = "#10b981" if r["fx_diff"] >= 0 else "#ba1a1a"
+                diff_color = "#2E6B5A" if r["fx_diff"] >= 0 else "#B2382F"
                 pct = (r["fx_diff"] / r["static_eur"] * 100) if r["static_eur"] else 0
                 rows.append(
                     [
